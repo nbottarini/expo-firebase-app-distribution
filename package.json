@@ -1,0 +1,53 @@
+{
+  "name": "expo-firebase-app-distribution",
+  "version": "0.1.0",
+  "description": "Expo Config plugin for react-native-firebase-app-distribution",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Nicolás Bottarini <nicolasbottarini@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/nbottarini/expo-firebase-app-distribution#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbottarini/expo-firebase-app-distribution.git"
+  },
+  "keywords": [
+    "expo",
+    "firebase",
+    "app-distribution"
+  ],
+  "files": [
+    "dist",
+    "app.plugin.js"
+  ],
+  "scripts": {
+    "build": "yarn run tsc --build",
+    "lint": "yarn run eslint . && yarn run tsc --noEmit"
+  },
+  "dependencies": {
+    "expo-build-properties": "~0.11.1"
+  },
+  "packageManager": "yarn@4.1.1",
+  "peerDependencies": {
+    "@react-native-firebase/app": "^19.0.0",
+    "@react-native-firebase/app-distribution": "^19.0.0",
+    "expo": "^50"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "~3.2.0",
+    "@react-native-firebase/app-distribution": "~19.0.0",
+    "@types/node": "~20.12.7",
+    "@types/react": "~18.2.39",
+    "@types/react-native": "~0.73.0",
+    "eslint": "~8.57.0",
+    "eslint-plugin-json": "~3.1.0",
+    "expo": "~50.0.14",
+    "metro-react-native-babel-preset": "~0.77.0",
+    "react": "~18.2.0",
+    "react-native": "~0.73.6",
+    "typescript": "~5.4.4"
+  }
+}
